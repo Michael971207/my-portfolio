@@ -1,17 +1,14 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Layout from "../components/Layout";
 
 export default function Home() {
   return (
-    <div>
-      <Navbar />
-      <main className="container mx-auto p-4 text-center">
-        <h1 className="text-4xl font-bold">Velkommen til Michael&apos;s Portfolio</h1>
+    <Layout>
+      <div className="text-center">
+        <h1 className="text-4xl font-bold">Welcome to Michael&apos;s Portfolio</h1>
         <p className="mt-4 text-gray-700">
-          Jeg er en IT-utvikler med lidenskap for teknologi og problemløsning.
+          Explore my projects, skills, and professional journey in IT and digitalization.
         </p>
-      </main>
-      <Footer />
-    </div>
+      </div>
+    </Layout>
   );
 }
